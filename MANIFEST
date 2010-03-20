@@ -1,0 +1,8 @@
+Build.PL
+lib/Parallel/Runner.pm
+MANIFEST			This list of files
+t/Destruction.t
+t/Runner.t
+t/Timeouts.t
+README
+META.yml
