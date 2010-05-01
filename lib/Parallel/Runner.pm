@@ -6,7 +6,7 @@ use POSIX ();
 use Time::HiRes qw/sleep/;
 use Carp;
 
-our $VERSION = 0.005;
+our $VERSION = 0.006;
 
 for my $accessor (qw/ exit_callback iteration_callback pids pid max iteration_delay reap_callback/) {
     my $sub = sub {
@@ -115,8 +115,11 @@ sub finish {
     my $counter = 0;
     while ( values %pids ) {
         for my $pid ( keys %pids ) {
-            delete $pids{$pid}
-                if waitpid( $pid, &POSIX::WNOHANG );
+            if ( my $out = waitpid( $pid, &POSIX::WNOHANG )) {
+                $self->reap_callback->( $? || 0, $pid, $out )
+                    if $self->reap_callback;
+                delete $pids{$pid};
+            }
         }
         sleep($self->iteration_delay);
         $counter += $self->iteration_delay;
