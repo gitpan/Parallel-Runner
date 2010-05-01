@@ -7,7 +7,7 @@ build_requires:
   Test::More: 0
 configure_requires:
   Module::Build: 0.36
-generated_by: 'Module::Build version 0.3605'
+generated_by: 'Module::Build version 0.3603'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,7 +16,7 @@ name: Parallel-Runner
 provides:
   Parallel::Runner:
     file: lib/Parallel/Runner.pm
-    version: 0.004
+    version: 0.005
 requires:
   POSIX: 0
   Time::HiRes: 0
@@ -24,4 +24,4 @@ resources:
   bugtracker: http://github.com/exodist/Parallel-Runner/issues
   license: http://dev.perl.org/licenses/
   repository: http://github.com/exodist/Parallel-Runner
-version: 0.004
+version: 0.005
