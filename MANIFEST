@@ -1,8 +1,9 @@
 Build.PL
 lib/Parallel/Runner.pm
 MANIFEST			This list of files
-META.yml
 README
 t/Destruction.t
 t/Runner.t
 t/Timeouts.t
+META.yml
+META.json

@@ -6,8 +6,9 @@ build_requires:
   Test::Exception::LessClever: 0
   Test::More: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3603'
+  Module::Build: 0.38
+dynamic_config: 1
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,7 +17,7 @@ name: Parallel-Runner
 provides:
   Parallel::Runner:
     file: lib/Parallel/Runner.pm
-    version: 0.010
+    version: 0.011
 requires:
   Child: 0.009
   POSIX: 0
@@ -26,4 +27,4 @@ resources:
   homepage: http://open-exodus.net/projects/parrallel-runner
   license: http://dev.perl.org/licenses/
   repository: http://github.com/exodist/Parallel-Runner
-version: 0.010
+version: 0.011
