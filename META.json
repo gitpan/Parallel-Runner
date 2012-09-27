@@ -4,7 +4,7 @@
       "Chad Granum <exodist7@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "perl_5"
    ],
@@ -16,27 +16,27 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::Exception::LessClever" : 0,
-            "Test::More" : 0
+            "Test::Exception::LessClever" : "0",
+            "Test::More" : "0"
          }
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "Module::Build" : "0.39"
          }
       },
       "runtime" : {
          "requires" : {
             "Child" : "0.009",
-            "POSIX" : 0,
-            "Time::HiRes" : 0
+            "POSIX" : "0",
+            "Time::HiRes" : "0"
          }
       }
    },
    "provides" : {
       "Parallel::Runner" : {
          "file" : "lib/Parallel/Runner.pm",
-         "version" : "0.011"
+         "version" : "0.012"
       }
    },
    "release_status" : "stable",
@@ -52,5 +52,5 @@
          "url" : "http://github.com/exodist/Parallel-Runner"
       }
    },
-   "version" : "0.011"
+   "version" : "0.012"
 }
